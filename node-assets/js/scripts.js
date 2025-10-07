@@ -1,3 +1,2 @@
 import "./dependencies/swiper/reusable-swiper-attrs";
-
-console.log('testing v2');
+import "./core-functions/_cart_functions";

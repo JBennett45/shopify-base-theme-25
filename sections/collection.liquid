@@ -5,6 +5,8 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/collection
 {% endcomment %}
 
+{% assign selectedVariant = product.first_or_selected_variant %}
+
 <h1>{{ collection.title }}</h1>
 
 <div class="collection-products">
@@ -24,6 +26,37 @@
         <div class="collection-product__content">
           <p>{{ product.title | escape | link_to: product.url }}</p>
           <p>{{ product.price | money }}</p>
+
+
+        
+        
+          
+          <h4>Custom add to cart</h4>
+          {% form 'product', product, class:'cst-base-adtc' %}
+            <label class="product-option">Options</label>
+            <select class="product-select" name="id">
+              {% for variant in product.variants %}
+                <option
+                  {% if selectedVariant.id == variant.id %}
+                    selected
+                  {% endif %}
+                  value="{{ variant.id }}"
+                >
+                  {{ variant.title }}
+                </option>
+              {% endfor %}
+            </select>
+
+            <div class="product-quantity">
+              <label for="quantity">Quantity</label>
+              <input name="quantity" id="quantity" value="1">
+            </div>
+
+            <button class="button product-add" type="submit">Add to cart</button>
+          {% endform %}
+        
+      
+
         </div>
       </div>
     {% endfor %}
