@@ -1,5 +1,5 @@
 {
     "/node-assets/js/scripts.min.js": "/node-assets/js/scripts.min.js",
-    "/theme-dir/assets/base-styles.min.css": "/theme-dir/assets/base-styles.min.css",
-    "/theme-dir/assets/base-scripts.min.js": "/theme-dir/assets/base-scripts.min.js"
+    "/assets/base-styles.min.css": "/assets/base-styles.min.css",
+    "/assets/base-scripts.min.js": "/assets/base-scripts.min.js"
 }

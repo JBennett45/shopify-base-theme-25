@@ -11,3 +11,14 @@
 #
 # Ignore templates and sections with a regular expression:
 #   /theme-dir/(templates|sections)/.*\.json/
+
+node-assets/*
+node-modules/*
+
+.gitattributes
+.gitignore
+package.json
+package-lock.json
+node-assets/*
+README.md
+webpack.mix.js
