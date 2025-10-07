@@ -1,0 +1,17 @@
+{
+  "name": "base-theme",
+  "version": "1.0.0",
+  "description": "Starter Shopify with preprocessing support, designed to work with CLI and dev tools.",
+  "scripts": {
+    "dev": "npx mix watch",
+    "build": "mix --production"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "browser-sync-webpack-plugin": "^2.4.0",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.88.0",
+    "sass-loader": "^12.6.0"
+  }
+}

@@ -4,10 +4,10 @@
 # Examples:
 #
 # Ignore a specific file:
-#   templates/product.json
+#   theme-dir/templates/product.json
 #
 # Ignore templates with a wildcard pattern:
-#   templates/*.json
+#   theme-dir/templates/*.json
 #
 # Ignore templates and sections with a regular expression:
-#   /(templates|sections)/.*\.json/
+#   /theme-dir/(templates|sections)/.*\.json/
