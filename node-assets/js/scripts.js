@@ -1,3 +1,3 @@
 import "./dependencies/swiper/reusable-swiper-attrs";
 
-alert('testing');
+console.log('testing');
